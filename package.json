@@ -5,9 +5,12 @@
   "license": "unlicensed",
   "main": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
-  "files": [
-    "dist/esm"
-  ],
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js"
+    },
+    "./package.json": "./package.json"
+  },
   "devDependencies": {
     "@babel/preset-env": "^7.21.5",
     "@babel/preset-react": "^7.18.6",
