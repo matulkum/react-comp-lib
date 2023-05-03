@@ -13,7 +13,7 @@ export default {
     './src/index.ts',
   ],
   output: {
-    dir: 'dist-rollup',
+    dir: 'dist',
     format: 'esm',
     preserveModules: true,
     preserveModulesRoot: 'src',
